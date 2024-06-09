@@ -67,6 +67,10 @@ app.get("/count", async(req, res)=> {
   }
 })
 
+app.get("/test2", async(req, res) => {
+  res.status(200).json("this is an other test of render to commit ")
+} )
+
 // get bugs
 app.get("/allbugs", async(req, res) => {
   try {
